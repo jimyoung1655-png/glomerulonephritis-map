@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>肾小球肾炎：发病机制与常见类型｜知识图谱与问题图谱</title>
+<style>
+:root{--ink:#17243a;--muted:#61718a;--line:#dce4ef;--bg:#f4f7fb;--blue:#2563eb;--teal:#0f8b8d;--violet:#7654c8;--amber:#b7791f;--red:#c34c55;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.6}
+header{background:linear-gradient(120deg,#102b50,#1e5684);color:#fff;padding:34px 22px 28px}
+.wrap{max-width:1180px;margin:auto;padding:0 18px}
+.kicker{font-size:12px;letter-spacing:2px;opacity:.8;font-weight:700}
+h1{font-size:clamp(25px,4vw,38px);line-height:1.25;margin:8px 0}
+.subtitle{opacity:.86;max-width:780px}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #ffffff55;border-radius:99px;padding:4px 11px;font-size:12px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px auto 0}
+nav button,.filter button{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+nav button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+main{padding:24px 0 50px}.panel{display:none}.panel.active{display:block}
+.intro{background:#eaf1fb;border-left:4px solid var(--blue);padding:14px 17px;border-radius:10px;margin:0 0 20px}
+.section-title{font-size:21px;margin:25px 0 8px}.hint{color:var(--muted);font-size:13px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 3px 12px #233c5a0a}
+.card h3{font-size:16px;margin:0 0 8px}.card p{margin:5px 0;color:#40516a;font-size:14px}
+.tag{display:inline-block;border-radius:6px;padding:2px 7px;font-size:11px;font-weight:700;margin:0 5px 5px 0;background:#eaf1ff;color:#2454a6}
+.tag.teal{background:#e5f6f3;color:#08756e}.tag.violet{background:#f0ebff;color:#6745ad}.tag.amber{background:#fff4df;color:#97600b}.tag.red{background:#ffebec;color:#a43b46}
+.node{cursor:pointer;transition:.15s;border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff;text-align:left;width:100%;color:inherit}
+.node:hover,.node.selected{border-color:var(--blue);box-shadow:0 0 0 3px #2563eb18}
+.node strong{display:block;font-size:14px}.node small{color:var(--muted)}
+.nodegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.detail{margin-top:14px;background:#fff;border:1px solid #b9ccef;border-radius:14px;padding:18px;min-height:120px}
+.detail h3{margin:0 0 7px}.detail ul{margin:7px 0 0;padding-left:20px}
+.flow{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:stretch;gap:6px;margin:15px 0}
+.flowbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.arrow{display:grid;place-items:center;color:#7890ad;font-size:24px;font-weight:800}
+@media(max-width:720px){.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:22px}}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}.filter button{font-size:12px;padding:7px 11px}.filter button.active{background:#173b64;color:white;border-color:#173b64}
+.qcard{border:1px solid var(--line);border-radius:13px;background:#fff;padding:15px;margin:10px 0}
+.qtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:7px}
+.qcard h3{font-size:15px;margin:0}.qcard details{margin-top:9px;color:#45566f;font-size:14px}
+.qcard summary{cursor:pointer;color:var(--blue);font-weight:700}
+.source{font-size:12px;color:var(--muted);margin-top:10px}
+.source a{color:#1d5fb8;text-decoration:none}.source a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--line);padding:22px 0 35px;color:var(--muted);font-size:12px}
+.search{width:100%;max-width:360px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;font:inherit}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:12px 0}
+.note{font-size:13px;color:#5a6980;background:#fff;border:1px dashed #b8c8db;padding:12px;border-radius:10px;margin-top:15px}
+@media print{nav,.filters,.search{display:none!important}.panel{display:block!important}.card,.qcard{break-inside:avoid}body{background:#fff}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="kicker">基础医学 · 病理学 · 学习图谱</div>
+<h1>肾小球肾炎的发病机制和常见类型</h1>
+<div class="subtitle">从免疫损伤机制出发，连接肾小球病理改变、疾病类型与临床表现；通过可追溯的问题检验对机制链条的理解。</div>
+<div class="meta"><span class="pill">知识图谱 + 问题图谱</span><span class="pill">基础医学班</span><span class="pill">课程课件导向 · 文献拓展</span></div>
+</div></header>
+<main class="wrap">
+<nav>
+<button class="active" data-tab="knowledge">知识图谱</button>
+<button data-tab="questions">问题图谱</button>
+<button data-tab="guide">阅读与使用说明</button>
+</nav>
+
+<section id="knowledge" class="panel active">
+<div class="intro"><b>阅读路径：</b>先看“免疫损伤如何发生”，再看“损伤造成什么形态学改变”，最后将病理类型与肾病综合征、肾炎综合征或血尿等临床表现对应。点击任一知识节点可查看解释、关键联系及课件页码。</div>
+<h2 class="section-title">1. 发病机制主干</h2>
+<div class="flow">
+<div class="flowbox"><b>致病因素 / 抗原来源</b><p>感染相关抗原、自身抗原、植入抗原；遗传易感与补体调控异常</p></div>
+<div class="arrow">→</div>
+<div class="flowbox"><b>免疫损伤路径</b><p>循环免疫复合物、原位免疫复合物、抗GBM抗体；补体异常、足细胞损伤</p></div>
+<div class="arrow">→</div>
+<div class="flowbox"><b>肾小球效应损伤</b><p>补体激活、炎症细胞募集、滤过屏障破坏、毛细血管袢损伤</p></div>
+</div>
+<div class="nodegrid" id="mechanismNodes"></div>
+<div class="detail" id="mechanismDetail"><h3>选择一个机制节点</h3><p>点击上方节点查看机制细节与相关疾病。</p></div>
+
+<h2 class="section-title">2. 基本病理变化：从损伤到形态</h2>
+<p class="hint">这些形态学改变并非每种疾病都同时出现；“弥漫/局灶”描述受累肾小球比例，“球性/节段性”描述单个肾小球内受累范围。</p>
+<div class="nodegrid" id="pathologyNodes"></div>
+<div class="detail" id="pathologyDetail"><h3>病理变化节点</h3><p>点击节点查看定义及其功能后果。</p></div>
+
+<h2 class="section-title">3. 常见类型：病理模式与临床联系</h2>
+<div class="legend"><span>蓝色：肾病综合征相关</span><span>绿色：肾炎综合征相关</span><span>紫色：血尿 / 其他类型</span></div>
+<div class="nodegrid" id="diseaseNodes"></div>
+<div class="detail" id="diseaseDetail"><h3>选择一种疾病</h3><p>比较其发病机制、光镜 / 免疫荧光 / 电镜特点及临床表现。</p></div>
+
+<h2 class="section-title">4. 临床病理联系：由滤过屏障变化推导表现</h2>
+<div class="grid">
+<div class="card"><span class="tag">肾病综合征</span><h3>滤过屏障通透性升高</h3><p>大量蛋白尿（≥3.5 g/d）→ 低白蛋白血症 → 血浆胶体渗透压下降 → 水肿；同时出现高脂血症、脂质尿。</p><p><b>典型相关：</b>MCD、FSGS、MN，也可见于其他类型。</p></div>
+<div class="card"><span class="tag teal">肾炎综合征</span><h3>肾小球炎性损伤</h3><p>毛细血管袢及滤过屏障受损 → 血尿；GFR下降 → 氮质血症、少尿；RAS活化等参与高血压。</p><p><b>典型相关：</b>APGN。</p></div>
+<div class="card"><span class="tag red">急进性肾炎</span><h3>新月体形成与快速肾功能丢失</h3><p>毛细血管袢严重损伤，血浆成分进入鲍曼囊，壁层上皮细胞增生并伴巨噬细胞浸润形成新月体。</p><p><b>病理基础：</b>新月体性GN（RPGN）。</p></div>
+<div class="card"><span class="tag violet">慢性肾功能衰竭</span><h3>肾单位持续丢失</h3><p>肾小球硬化、小管萎缩、间质纤维化及血管病变 → 肾功能进行性丧失，可出现多尿、夜尿、高血压、贫血、氮质血症及尿毒症。</p></div>
+</div>
+<div class="note"><b>命名辨析：</b>“肾小球肾炎”是病理疾病谱；“肾病综合征 / 肾炎综合征”是临床表现组合；“新月体性肾炎”是形态学模式；“RPGN”强调快速进展的临床过程。几者有关联，但不能简单视为同义词。</div>
+</section>
+
+<section id="questions" class="panel">
+<div class="intro"><b>问题图谱设计：</b>问题均挂载到知识图谱中的节点。一级为记忆识别，二级为机制解释，三级为机制推演 / 综合应用；同时覆盖概念、机制、病例与综合四类，机制探究问题占较高比例。</div>
+<div class="filters">
+<button class="active" data-filter="all">全部问题</button><button data-filter="L1">一级·记忆</button><button data-filter="L2">二级·理解分析</button><button data-filter="L3">三级·应用综合</button><button data-filter="case">病例情境</button>
+</div>
+<div id="questionList"></div>
+<div class="note"><b>使用建议：</b>先独立回答，再展开“思考方向”自查。问题图谱不是标准答案列表，而是用来暴露知识链条中尚未理解的环节。可在课堂讨论时选择三级问题展开。</div>
+</section>
+
+<section id="guide" class="panel">
+<div class="intro"><b>使用说明：</b>本页面为单文件交互式学习网页。点击顶部标签切换两张图谱；知识图谱中点击节点查看细节；问题图谱可按难度筛选，并展开每道题的思考方向及知识节点溯源。</div>
+<h2 class="section-title">设计思路</h2>
+<div class="grid">
+<div class="card"><h3>知识组织</h3><p>以免疫损伤机制为起点，以病理形态学为中间层，以疾病类型和临床表现为结果层，突出因果链及疾病间共享机制。</p></div>
+<div class="card"><h3>问题组织</h3><p>每道题标注难度、问题类型及对应知识节点，覆盖记忆、理解、应用与综合推演，避免出现无法追溯的“孤立问题”。</p></div>
+<div class="card"><h3>学科定位</h3><p>面向基础医学班，重点讨论免疫复合物形成、补体介导损伤、足细胞损伤及病理—临床联系，并加入可访问的研究文献。</p></div>
+</div>
+<h2 class="section-title">课件依据</h2>
+<div class="card">
+<p>刘学光：《泌尿系统疾病的病理学》（课程课件）。主要依据：肾小球肾炎定义与发病机制（第12–21页）；基本病理变化（第22–32页）；临床病理联系（第33–36页）；MCD、FSGS、MN、MPGN（第41–84页）；APGN、RPGN（第86–99页）；IgA肾病及遗传性肾炎（第101–112页）；慢性硬化性肾炎（第114–119页）。</p>
+<p>评分依据：《学生“知识图谱”与“问题图谱”教师评分细则》，基础医学班微调见第4页：机制深度与文献链接为重点；问题图谱鼓励机制探究类问题占比≥40%。</p>
+</div>
+<h2 class="section-title">文献拓展（关键机制节点）</h2>
+<div class="card">
+<ol>
+<li><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2314471" target="_blank" rel="noopener">Autoantibodies Targeting Nephrin in Podocytopathies. NEJM, 2024.</a> — 支持抗nephrin抗体与MCD / 足细胞损伤的机制拓展。</li>
+<li><a href="https://www.nature.com/articles/s41581-022-00564-1" target="_blank" rel="noopener">Membranous nephropathy: new pathogenic mechanisms and their clinical implications. Nature Reviews Nephrology, 2022.</a> — PLA2R、THSD7A及原位免疫复合物。</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9838307/" target="_blank" rel="noopener">Glomerulonephritis: immunopathogenesis and immunotherapy. 2023.</a> — 不同免疫机制与肾小球病理模式的联系。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=IgA+nephropathy+pathogenesis+review" target="_blank" rel="noopener">PubMed：IgA nephropathy pathogenesis review（检索入口）</a> — IgA糖基化异常、免疫复合物及系膜沉积。</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=C3+glomerulopathy+alternative+complement+pathway+review" target="_blank" rel="noopener">PubMed：C3 glomerulopathy / alternative complement pathway（检索入口）</a> — 补体旁路途径异常。</li>
+</ol>
+</div>
+<h2 class="section-title">提交前核对</h2>
+<ul>
+<li>检查机制节点与疾病类型的联系，特别是不同新月体性GN免疫学分型。</li>
+<li>注意MCD、FSGS和MN均可表现为肾病综合征，但病变部位和机制不同。</li>
+<li>本图谱以课程课件为主体；文献拓展内容已与课件内容区分，不能把研究关联写成所有患者均适用的定论。</li>
+<li>将本HTML文件部署到可公开访问的静态网页托管服务后，复制网页URL提交；仅下载文件本身并不等于已经生成公网网址。</li>
+</ul>
+</section>
+</main>
+<footer><div class="wrap">学习用途 · 基于课程课件整理，文献拓展用于机制理解。请以教师讲授及课程指定资料为准；本网页不构成临床诊疗建议。</div></footer>
+<script>
+const mechanisms=[
+{id:"M1",name:"循环免疫复合物沉积",short:"血循环中先形成Ag-Ab复合物，再沉积于肾小球",detail:"抗原可为外源性（细菌、病毒、寄生虫、药物等）或内源性。循环免疫复合物沉积后可激活补体并募集炎症细胞，增加肾小球通透性并造成炎性损伤。沉积部位可包括内皮下、系膜及上皮下。",links:"APGN；部分免疫复合物型MPGN；狼疮性肾炎等",source:"课件第13–16、20页"},
+{id:"M2",name:"原位免疫复合物形成",short:"抗体在肾小球内与固有或植入抗原结合",detail:"抗原可以是肾小球固有抗原，也可以是循环来源的植入抗原。膜性肾病是典型例子：抗PLA2R、抗THSD7A等抗体与足细胞相关抗原结合，形成上皮下免疫沉积。",links:"膜性肾病（MN）；Heymann肾炎为实验模型",source:"课件第17、57–60页；拓展文献见NEJM Rev 2022"},
+{id:"M3",name:"抗GBM抗体",short:"抗体识别Ⅳ型胶原α3链NC1结构域",detail:"抗GBM抗体结合肾小球基底膜，可呈线性免疫荧光；部分患者同时累及肺泡基底膜，形成Goodpasture病。严重毛细血管袢损伤可导致新月体形成和急进性肾炎。",links:"抗GBM病；RPGNⅠ型",source:"课件第18–19、94、99页"},
+{id:"M4",name:"补体异常",short:"补体自身抗体或调控蛋白异常导致持续活化",detail:"补体异常可独立成为肾小球损伤机制。课件举例包括致密沉积物病（DDD）、C3肾小球肾炎（C3GN）及补体介导的血栓性微血管病。MPGN形态模式中的DDD与补体旁路途径过度活化相关。",links:"DDD / C3肾病；部分MPGN样病变",source:"课件第21、72、78–79页；拓展文献见GN immunopathogenesis review"},
+{id:"M5",name:"足细胞损伤",short:"足突、裂孔膜及细胞骨架结构或功能异常",detail:"可由自身抗体、毒素、细胞因子、循环因子或遗传缺陷引起。形态学可见足突消失、裂孔膜破坏、空泡、胞体回缩及微绒毛形成；nephrin、podocin等异常会破坏滤过屏障。",links:"MCD；FSGS；MN（靶向足细胞表面抗原）",source:"课件第8、21、42–47、50、55页；NEJM 2024抗nephrin研究"}
+];
+const pathology=[
+{id:"P1",name:"细胞增多",short:"固有细胞增生或炎症细胞浸润",detail:"内皮细胞、系膜细胞增生属于毛细血管内增生；壁层上皮细胞增生可形成新月体；炎细胞滞留或浸润也可造成细胞数量增加。可使毛细血管腔狭窄、GFR下降，出现少尿甚至无尿。",source:"课件第22–27页"},
+{id:"P2",name:"新月体形成",short:"壁层上皮细胞增生 + 单核巨噬细胞浸润",detail:"新月体位于鲍曼囊腔内。课件定义包括超过2层细胞且覆盖超过10%小球周径；可分细胞型、细胞纤维型、纤维型，呈细胞型→细胞纤维型→纤维型演变。",source:"课件第27、93–99页"},
+{id:"P3",name:"基底膜增厚 / 双轨征",short:"GBM结构改变，常与系膜插入相关",detail:"免疫复合物、淀粉样物质或基质沉积可使GBM增厚；系膜区向内皮下区插入可形成双轨征，MPGN是典型例子。滤过屏障电荷屏障及分子筛功能受损后，蛋白通透性增加。",source:"课件第28–30、70–79页"},
+{id:"P4",name:"坏死与炎性渗出",short:"血管襻纤维蛋白样坏死、血浆蛋白及炎细胞渗出",detail:"可伴红细胞漏出，造成尿沉渣活动性改变（细胞、管型等）。抗GBM病及ANCA相关性GN等可见严重毛细血管袢损伤。",source:"课件第31、98–99页"},
+{id:"P5",name:"硬化与纤维化",short:"肾小球硬化、小管萎缩、间质纤维化",detail:"可由纤维型新月体、渗出物机化、球囊壁破坏及系膜基质增多等导致。最终造成肾单位丢失、肾功能下降，进展至慢性肾功能衰竭或尿毒症。",source:"课件第32、114–119页"}
+];
+const diseases=[
+{id:"D1",name:"微小病变病（MCD）",type:"nephrotic",tag:"肾病综合征型",mechanism:"免疫相关足细胞损伤；课件介绍淋巴细胞功能异常、循环因子及anti-nephrin抗体研究线索。",lm:"光镜：肾小球基本正常或仅轻微改变；肾小管上皮可见重吸收蛋白滴。",if:"免疫荧光：基本阴性。",em:"电镜：足突广泛消失，可伴微绒毛形成。",clinical:"儿童（尤其1–7岁）肾病综合征常见；高选择性白蛋白尿；多数对激素治疗敏感，儿童预后通常较好。",source:"课件第41–47页；NEJM 2024"},
+{id:"D2",name:"局灶节段性肾小球硬化（FSGS）",type:"nephrotic",tag:"肾病综合征型",mechanism:"足细胞损伤为核心；可与肾小球高滤过/高压力、肥胖、药物、病毒、遗传性足细胞蛋白异常及循环因子有关。",lm:"局灶：部分肾小球受累；节段性：单个肾小球部分血管襻硬化。",if:"可见节段性IgM和C3。",em:"原发性常见足突广泛消失；继发性可为部分消失。",clinical:"非选择性蛋白尿；可伴镜下血尿、高血压及氮质血症；激素疗效欠佳，部分病例进展。",source:"课件第48–56页"},
+{id:"D3",name:"膜性肾病（MN）",type:"nephrotic",tag:"肾病综合征型",mechanism:"原位免疫复合物形成；原发性常与足细胞抗原PLA2R、THSD7A相关，继发性可见于药物、肿瘤、感染及自身免疫病。",lm:"毛细血管壁弥漫性增厚、僵硬；PASM可见钉突（spike）等改变。",if:"IgG沿毛细血管袢呈颗粒状沉积。",em:"上皮下电子致密物沉积；可见GBM反应性增厚。",clinical:"成人常见；肾病综合征、非选择性蛋白尿；起病隐匿，进展速度不一；抗PLA2R可用于诊断及病情评估。",source:"课件第57–69页；Nat Rev Nephrol 2022"},
+{id:"D4",name:"膜增生性肾小球肾炎（MPGN）",type:"nephrotic",tag:"肾病综合征 / 肾炎表现均可",mechanism:"是一种形态学模式。Ⅰ型多为免疫复合物型；课件所述Ⅱ型DDD与补体旁路途径过度活化相关。",lm:"系膜/内皮细胞增生、炎细胞浸润；系膜插入导致双轨征，肾小球可呈分叶状。",if:"Ⅰ型可见IgG、C1q、C3；Ⅱ型以C3沉积为主。",em:"Ⅰ型以电子致密物内皮下沉积为主；DDD为GBM内高电子密度、飘带样沉积。",clinical:"血尿及不同程度蛋白尿；部分病例伴低补体血症；常需寻找感染、自身免疫或单克隆免疫球蛋白等相关病因。",source:"课件第70–84页"},
+{id:"D5",name:"急性感染后肾小球肾炎（APGN）",type:"nephritic",tag:"肾炎综合征型",mechanism:"感染相关免疫损伤，循环免疫复合物及补体参与；典型链球菌感染后肾炎常在感染后1–4周出现。",lm:"弥漫性细胞增多：内皮/系膜细胞增生，并有中性粒细胞、单核细胞浸润。",if:"IgG、C3呈颗粒状沉积，可呈星空样（starry-sky）。",em:"上皮下驼峰样（hump）电子致密物。",clinical:"儿童较常见；可出现急性肾炎综合征，血清抗“O”升高、补体下降；多数儿童预后良好。",source:"课件第86–92页"},
+{id:"D6",name:"新月体性GN / RPGN",type:"nephritic",tag:"急进性肾炎",mechanism:"按免疫学机制分为Ⅰ型抗GBM、Ⅱ型免疫复合物、Ⅲ型寡免疫复合物（常与ANCA相关）。",lm:"壁层上皮细胞增生并伴单核巨噬细胞浸润形成新月体；常伴毛细血管袢坏死及严重小管间质损伤。",if:"Ⅰ型线性IgG/C3；Ⅱ型颗粒状免疫球蛋白/补体；Ⅲ型无或少量沉积。",em:"可见GBM断裂或缺损；Ⅱ型可有电子致密物，Ⅰ/Ⅲ型通常无相应免疫复合物沉积。",clinical:"急性、快速肾功能丢失，可表现为肾炎综合征、少尿甚至无尿；预后与新月体受累比例等相关。",source:"课件第93–99页"},
+{id:"D7",name:"IgA肾病（IgAN）",type:"hematuria",tag:"血尿型",mechanism:"IgA（尤其IgA1）糖基化异常、聚合及抗体反应形成免疫复合物，沉积于系膜区；IgA产生或清除异常及遗传因素参与。",lm:"系膜细胞增生、系膜基质增多，系膜区扩大；可按MEST-C进行病理评分。",if:"以IgA为主的系膜区沉积。",em:"系膜区电子致密物。",clinical:"可在呼吸道或消化道感染后反复出现肉眼血尿，也可无症状血尿；病程进展差异较大。",source:"课件第101–107页"},
+{id:"D8",name:"遗传性肾炎（以Alport综合征为例）",type:"hematuria",tag:"遗传性",mechanism:"编码Ⅳ型胶原α3、α4、α5链的基因变异，导致GBM结构异常。",lm:"早期可正常或轻微改变；后期可见GBM增厚及肾小管间质损害。",if:"免疫球蛋白/补体多为阴性；Alport可见GBM Col IV α3–α5表达缺失。",em:"早期GBM变薄，进展期不规则增厚、致密层撕裂分层，呈篮网状。",clinical:"Alport常伴神经性耳聋及眼部异常；薄基膜肾病可表现为家族性持续血尿。",source:"课件第108–112页"},
+{id:"D9",name:"慢性硬化性肾炎",type:"chronic",tag:"慢性结局",mechanism:"多种肾小球肾炎的共同终末结局之一，核心是持续肾单位丢失及纤维化。",lm:"细颗粒性固缩肾；肾小球广泛硬化（课件列示>75%），伴严重小管间质损害及血管病变。",if:"有或无，取决于原发疾病。",em:"硬化小球呈均质状系膜基质或基膜样物。",clinical:"多尿、夜尿、高血压、贫血、氮质血症及尿毒症；严重者需透析或肾移植。",source:"课件第114–119页"}
+];
+const questions=[
+{level:"L1",kind:"概念",title:"肾小球肾炎常见的三类免疫损伤机制是什么？",nodes:["M1","M2","M3"],think:"循环免疫复合物沉积、原位免疫复合物形成、抗GBM抗体介导损伤。课件还补充了补体异常及足细胞损伤等其他机制。",why:"建立发病机制的基本分类。"},
+{level:"L1",kind:"概念",title:"新月体由哪些细胞成分构成？",nodes:["P2"],think:"壁层上皮细胞增生，并伴单核巨噬细胞浸润；可进一步区分细胞型、细胞纤维型和纤维型。",why:"掌握RPGN的核心形态学基础。"},
+{level:"L1",kind:"概念",title:"APGN在免疫荧光和电镜下各有什么典型表现？",nodes:["D5"],think:"免疫荧光：IgG、C3颗粒状沉积，可呈星空样；电镜：上皮下驼峰样电子致密物。",why:"将光镜、免疫荧光和电镜联合识别。"},
+{level:"L2",kind:"机制",title:"为什么足细胞损伤会导致大量蛋白尿？",nodes:["M5","P3"],think:"足细胞足突及裂孔膜是滤过屏障的重要组成部分。足突消失或裂孔膜结构受损，会破坏滤过屏障选择性，使白蛋白等血浆蛋白滤过增加。进一步联系低白蛋白血症、水肿及高脂血症。",why:"从细胞结构改变推导器官功能与临床表现。"},
+{level:"L2",kind:"机制",title:"循环免疫复合物沉积与原位免疫复合物形成有什么区别？",nodes:["M1","M2"],think:"前者是在血循环中先形成抗原-抗体复合物，再沉积于肾小球；后者是抗体在肾小球内与固有抗原或植入抗原结合。可比较MN与感染相关免疫复合物性GN。",why:"区分相似免疫沉积背后的形成路径。"},
+{level:"L2",kind:"机制",title:"为什么MPGN会出现GBM双轨征？",nodes:["D4","P3"],think:"扩大的系膜区向内皮下区插入（系膜插入），并伴GBM重塑，光镜下可见毛细血管壁双轮廓/双轨征。",why:"把组织结构变化与病理形态联系起来。"},
+{level:"L2",kind:"机制",title:"为什么APGN更容易出现肾炎综合征，而MCD典型表现为肾病综合征？",nodes:["D5","D1"],think:"APGN突出炎症性毛细血管袢损伤，红细胞漏出且GFR下降，因而出现血尿、少尿、氮质血症及高血压。MCD主要是足细胞滤过屏障功能异常，突出大量蛋白尿。",why:"比较炎性损伤与足细胞病变的临床后果。"},
+{level:"L3",kind:"病例",title:"儿童在咽喉感染约2周后出现茶色尿、眼睑水肿和血压升高，补体C3降低。最应考虑哪类GN？还需要寻找哪些支持证据？",nodes:["D5","M1"],think:"优先考虑感染后肾小球肾炎。结合链球菌感染史、抗“O”升高、尿检血尿/蛋白尿；肾活检可见弥漫性内皮/系膜细胞增生及中性粒细胞浸润，IF颗粒状IgG/C3，EM上皮下驼峰样沉积。病例推断仍需结合完整临床资料。",why:"将感染时间窗、补体和形态学证据整合。"},
+{level:"L3",kind:"机制推演",title:"同样是新月体形成，为什么不能仅凭光镜诊断为抗GBM病？",nodes:["M3","D6","P2"],think:"新月体是严重毛细血管袢损伤的共同形态学模式，可由抗GBM抗体、免疫复合物或寡免疫/ANCA相关机制导致。需结合免疫荧光：Ⅰ型线性IgG/C3，Ⅱ型颗粒状沉积，Ⅲ型少或无沉积，并结合血清学。",why:"理解形态学模式与病因分类不是一一对应。"},
+{level:"L3",kind:"机制推演",title:"MN与MCD都可出现肾病综合征，为什么免疫荧光和电镜结果不同？",nodes:["D1","D3","M2","M5"],think:"MN通常由针对足细胞表面抗原的抗体在原位形成免疫复合物，IF呈沿毛细血管袢颗粒状IgG，EM见上皮下电子致密物。MCD常规IF基本阴性，EM主要见足突广泛消失；二者损伤靶点与沉积方式不同。",why:"以相同临床综合征反推不同病理机制。"},
+{level:"L3",kind:"综合",title:"从免疫复合物沉积到水肿，构建一条完整的病理生理链。",nodes:["M1","M2","P3","D3"],think:"抗原-抗体复合物形成/沉积 → 补体激活及足细胞、GBM等滤过屏障损伤 → 蛋白通透性增加 → 大量蛋白尿 → 低白蛋白血症 → 血浆胶体渗透压下降，并伴肾脏水钠潴留 → 水肿。注意不同GN的沉积部位与效应机制并不完全相同。",why:"跨越免疫学、病理学和临床生理学进行整合。"},
+{level:"L3",kind:"综合",title:"IgA肾病患者反复出现感染相关肉眼血尿，哪些证据可将其与APGN区分？",nodes:["D7","D5"],think:"IgA肾病常在黏膜感染同时或紧接着出现反复肉眼血尿，免疫荧光以IgA为主、沉积于系膜区；APGN通常在感染后约1–4周出现，常见C3下降，IF为IgG/C3颗粒状沉积，EM可见上皮下驼峰。时间关系、免疫荧光及电镜需综合判断。",why:"鉴别两种感染相关临床情境不同的免疫性GN。"}
+];
+const map={...Object.fromEntries(mechanisms.map(x=>[x.id,x.name])),...Object.fromEntries(pathology.map(x=>[x.id,x.name])),...Object.fromEntries(diseases.map(x=>[x.id,x.name]))};
+function renderNodes(arr,container,detailId){const c=document.getElementById(container);c.innerHTML=arr.map(x=>`<button class="node" data-id="${x.id}"><strong>${x.name}</strong><small>${x.short||x.tag||""}</small></button>`).join("");c.querySelectorAll(".node").forEach(b=>b.addEventListener("click",()=>{c.querySelectorAll(".node").forEach(n=>n.classList.remove("selected"));b.classList.add("selected");const x=arr.find(z=>z.id===b.dataset.id);let body=`<h3>${x.name}</h3><p>${x.detail||x.mechanism||""}</p>`;if(x.lm)body+=`<p><b>光镜（LM）：</b>${x.lm}</p><p><b>免疫荧光（IF）：</b>${x.if}</p><p><b>电镜（EM）：</b>${x.em}</p><p><b>临床联系：</b>${x.clinical}</p>`;if(x.links)body+=`<p><b>关联疾病：</b>${x.links}</p>`;body+=`<div class="source">课件溯源：${x.source}</div>`;document.getElementById(detailId).innerHTML=body;}));}
+renderNodes(mechanisms,"mechanismNodes","mechanismDetail");renderNodes(pathology,"pathologyNodes","pathologyDetail");renderNodes(diseases,"diseaseNodes","diseaseDetail");
+function qhtml(q,i){const tags=q.nodes.map(n=>`<span class="tag">${n} · ${map[n]||n}</span>`).join("");const level=q.level==="L1"?"一级·记忆":q.level==="L2"?"二级·理解分析":"三级·应用综合";const cls=q.level==="L1"?"":q.level==="L2"?"teal":"violet";return `<article class="qcard" data-level="${q.level}" data-kind="${q.kind}"><div class="qtop"><span class="tag ${cls}">${level}</span><span class="tag amber">${q.kind}</span></div><h3>${i+1}. ${q.title}</h3><div style="margin-top:9px">${tags}</div><details><summary>展开思考方向</summary><p>${q.think}</p><p><b>设计意图：</b>${q.why}</p></details></article>`}
+const qlist=document.getElementById("questionList");qlist.innerHTML=questions.map(qhtml).join("");
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.getElementById(b.dataset.tab).classList.add("active")}));
+document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filters button").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".qcard").forEach(q=>{const f=b.dataset.filter;q.style.display=f==="all"||q.dataset.level===f||(f==="case"&&q.dataset.kind==="病例")?"block":"none"})}));
+</script>
+</body></html>
